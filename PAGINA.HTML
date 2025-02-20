@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".TRABAJO.HTML">
+    <title>Pagina web</title>
+</head>
+<body>
+<div class="Blog">
+    <div>Tatiana Morales</div>
+    <div>
+        <a href="#">Inicio</a>
+        <a href="#">¿Quien soy?</a>
+        <a href="#">Proyectos</a>
+    </div>
+</div>
+<div class="contenido">
+    <div class="imagen">
+        <img src="1.jpg">
+    </div>
+    <div class="text">
+        <h1>¿Quien soy?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Esse nisi adipisci provident eius enim id eos fugit odit facere vitae. Sit sequi praesentium, officiis rerum dicta. Deserunt ipsam officia neque!</p>
+        <button>Leer más</button>
+    </div>
+</div>
+<div class="contenido-adicional">
+    <div class="imagen">
+        <div class="circular-image">
+            <img src="2.jpg" alt="Imagen circular">
+        </div>
+    </div> 
+    <div class="text">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio amet nulla ad nobis minima doloribus inventore, aspernatur distinctio dicta ipsam fugit suscipit ullam architecto eos molestias placeat rerum facere.</h2>
+        <p><i>- Tatiana Morales</i></p>
+    </div>
+</div>
+<div class="proyectos">
+    <h2 class="titulo-proyectos">Mis Proyectos</h2>
+    <div class="proyecto">
+        <div class="imagen">
+            <img src="3.jpeg" alt="Proyecto 1">
+        </div>
+        <h3>Terminar mis estudios</h3>
+        <p>Terminar mis estudios es un objetivo clave en mi desarrollo personal y profesional. Este proyecto implica la culminación de mi carrera académica, que abarca una serie de metas específicas, entre las cuales se incluyen aprobar todos los cursos requeridos, desarrollar una tesis o proyecto final, y adquirir las habilidades y conocimientos necesarios para destacar en mi campo de estudio.</p>
+        <button>Ver proyecto</button>
+    </div>
+    <div class="proyecto">
+        <div class="imagen">
+            <img src="4.jpeg" alt="Proyecto 2">
+        </div>
+        <h3>Tener mi propia finca</h3>
+        <p> Mi objetivo es establecer una finca autosostenible, enfocada en la producción de alimentos orgánicos, la preservación del medio ambiente y la creación de un espacio de vida saludable y autosuficiente. Esta finca no solo servirá como mi hogar, sino también como un modelo de agricultura sostenible y un refugio para la biodiversidad local.</p>
+        <button>Ver proyecto</button>
+    </div>
+    <div class="proyecto">
+        <div class="imagen">
+            <img src="5.jpeg" alt="Proyecto 3">
+        </div>
+        <h3>Tener mi propia empresa</h3>
+        <p>Mi objetivo es establecer y gestionar una empresa exitosa, creando un producto o servicio que satisfaga una necesidad del mercado y aporte valor a los clientes. Esta empresa se centrará en la innovación, la sostenibilidad y el crecimiento a largo plazo, fomentando un entorno de trabajo inclusivo y motivador.</p>
+        <button>Ver proyecto</button>
+    </div>
+    <div class="proyecto">
+        <div class="imagen">
+            <img src="6.jpg" alt="Proyecto 4">
+        </div>
+        <h3>Compartir con mi familia</h3>
+        <p>El objetivo de este proyecto es fortalecer los lazos familiares y crear recuerdos inolvidables al pasar más tiempo de calidad juntos. Esto incluye planificar actividades y eventos que nos permitan disfrutar de la compañía mutua, aprender y crecer juntos, y apoyarnos en nuestras vidas diarias.</p>
+        <button>Ver proyecto</button>
+    </div>
+</div>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Blog { 
+    position: fixed;  
+    top: 0;
+    width: 100%;
+    padding: 20px 5px;
+    background-color: rgb(70, 67, 67);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.Blog a { 
+    color: white; 
+    text-decoration: none;
+    padding: 20px 10px; 
+}
+
+.contenido { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+} 
+
+.contenido img {
+    border-radius: 10px;
+    width: 500px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.contenido h1 {
+    color: #ff5722;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+.texto1 p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+}
+
+button {
+    padding: 20px 30px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contenido-adicional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.circular-image {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto2 h3, .texto2 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.proyectos { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+} 
+
+.titulo-proyectos {
+    grid-column: 1 / -1;
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 3em; 
+    color: rgb(70, 67, 67);
+}
+
+.proyecto { 
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    padding: 10px; 
+} 
+
+.proyecto:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(70, 67, 67);
+}
+
+.proyecto .imagen { 
+    margin-bottom: 10px; 
+} 
+
+.proyecto .imagen img { 
+    max-width: 100%; 
+    border-radius: 5px; 
+} 
+
+.proyecto h3 { 
+    color: black; 
+    margin-bottom: 10px; 
+} 
+
+.proyecto p { 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+.proyecto button { 
+    background-color: #ff5722; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    border: 1px solid black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+</style>
+</body>
+</html>
