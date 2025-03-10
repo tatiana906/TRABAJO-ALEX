@@ -15,20 +15,20 @@
             height: 100vh;
             background-color: #f0f0f0;
         }
-        
+
         .container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-            gap: 10px; /* Espacio entre las tarjetas */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
         }
-        
+
         .card {
             background-color: #dde;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
-            width: 200px; /* Ajusta el tamaño de la tarjeta */
-            height: auto; /* Ajusta la altura de la tarjeta */
+            width: 200px;
+            height: auto;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -40,11 +40,7 @@
         .card h2 {
             margin-top: 0;
         }
-        
-        .card p {
-            margin-bottom: 20px;
-        }
-        
+
         .card a {
             text-decoration: none;
         }
@@ -56,154 +52,43 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            align-self: center;
             width: 130px;
-            align-self: center; /* Centra el botón horizontalmente */
-        
         }
-        
+
         .card button:hover {
             background-color: #d472d7;
-        }
-
-
-        .card.superheroes {
-            background-color: #fff; /* Fondo blanco */
-            color: black;
-            align-items: center;
-        }
-
-        .card.superheroes .image-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .card.superheroes .image-container img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-        }
-
-        .card.superheroes .content {
-            z-index: 1; /* Para asegurarse de que el texto esté por encima del fondo */
-            margin-top: 10px;
-        }
-
-        .card.quien-soy {
-            background-color: #fff; /* Fondo blanco */
-            color: black;
-            align-items: center;
-        }
-
-        .card.quien-soy .image-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-        }
-
-        .card.quien-soy .image-container img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-        }
-
-        .card.quien-soy .content {
-            z-index: 1; /* Para asegurarse de que el texto esté por encima del fondo */
-            margin-top: 10px;
-        }
-
- 
-        .card.curriculum {
-            background-color: #fff; /* Fondo blanco */
-            color: black;
-            align-items: center;
-        }
-
-        .card.curriculum .image-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .card.curriculum .image-container img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-        }
-
-        .card.curriculum .content {
-            z-index: 1; /* Para asegurarse de que el texto esté por encima del fondo */
-            margin-top: 10px;
-        }
-
-        .card.video-Render {
-            background-color: #fff; /* Fondo blanco */
-            color: black;
-            align-items: center;
-        }
-
-        .card.video-Render .image-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 40px;
-        }
-
-        .card.video-Render .image-container img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-        }
-
-        .card.video-Render .content {
-            z-index: 1; /* Para asegurarse de que el texto esté por encima del fondo */
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card superheroes">
-            <div class="image-container">
-                <img src="https://i5.walmartimages.com/asr/ed350031-c87e-48ad-a5b5-347da6668cc4_1.2e56bfe16e369ad1146e38c215d2ffbd.jpeg" alt="SUPERHEROES">
-            </div>
-            <div class="content">
-                <h2>SUPERHEROES</h2>
-               <a href="https://trabajo-fqn6.onrender/tatiana906.github.io/SUPERHEROES/">
-                    <button>Leer más</button>
-                </a>
-            </div>
+            <h2>SUPERHEROES</h2>
+            <a href="https://trabajo-fqn6.onrender.com/tatiana906.github.io/SUPERHEROES/">
+                <button>Leer más</button>
+            </a>
         </div>
+
         <div class="card quien-soy">
-            <div class="image-container">
-                <img src="https://midevocional.org/wp-content/uploads/2012/09/Quiensoyyo.png" alt="QUIEN SOY">
-            </div>
-            <div class="content">
-                <h2>QUIEN SOY</h2>
-                <a href="https://trabajo-fqn6.onrender.com/tatiana906.github.io/QUIEN-SOY/">
-                    <button>Leer más</button>
-                </a>
-            </div>
+            <h2>QUIEN SOY</h2>
+            <a href="https://trabajo-fqn6.onrender.com/tatiana906.github.io/QUIEN-SOY/">
+                <button>Leer más</button>
+            </a>
         </div>
+
         <div class="card curriculum">
-            <div class="image-container">
-                <img src="https://www.smarttalent.uy/innovaportal/file/2777/1/cv_edit.jpg" alt="CURRICULUM">
-            </div>
-            <div class="content">
-                <h2>CURRICULUM</h2>
-                <a href="https://trabajo-fqn6.onrender.com/tatiana906.github.io/CURRICULUM/">
-                    <button>Leer más</button>
-                </a>
-            </div>
+            <h2>CURRICULUM</h2>
+            <a href="https://trabajo-fqn6.onrender.com/tatiana906.github.io/CURRICULUM/">
+                <button>Leer más</button>
+            </a>
         </div>
+
         <div class="card video-Render">
-            <div class="image-container">
-                <img src="https://i.ytimg.com/vi/VECKqrCpKGQ/maxresdefault.jpg" alt="VIDEO RENDER">
-            </div>
-            <div class="content">
-                <h2>VIDEO RENDER</h2>
-                <a href="https://trabajo-fqn6.onrender.com/youtu.be/Xv3f-AGwr9I">
-                    <button>Leer más</button>
-                </a>
-            </div>
+            <h2>VIDEO RENDER</h2>
+            <a href="https://trabajo-fqn6.onrender.com/youtu.be/Xv3f-AGwr9I">
+                <button>Leer más</button>
+            </a>
         </div>
     </div>
 </body>
