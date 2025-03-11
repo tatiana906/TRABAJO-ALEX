@@ -15,20 +15,20 @@
             height: 100vh;
             background-color: #f0f0f0;
         }
-
+        
         .container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px; 
         }
-
+        
         .card {
             background-color: #dde;
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
-            width: 200px;
-            height: auto;
+            width: 200px; 
+            height: auto; 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -40,7 +40,11 @@
         .card h2 {
             margin-top: 0;
         }
-
+        
+        .card p {
+            margin-bottom: 20px;
+        }
+        
         .card a {
             text-decoration: none;
         }
@@ -52,43 +56,154 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            align-self: center;
             width: 130px;
+            align-self: center;
+        
         }
-
+        
         .card button:hover {
             background-color: #d472d7;
+        }
+
+
+        .card.superheroes {
+            background-color: #fff; 
+            color: black;
+            align-items: center;
+        }
+
+        .card.superheroes .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card.superheroes .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .card.superheroes .content {
+            z-index: 1; 
+            margin-top: 10px;
+        }
+
+        .card.quien-soy {
+            background-color: #fff;
+            color: black;
+            align-items: center;
+        }
+
+        .card.quien-soy .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .card.quien-soy .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .card.quien-soy .content {
+            z-index: 1; 
+            margin-top: 10px;
+        }
+
+ 
+        .card.curriculum {
+            background-color: #fff; 
+            color: black;
+            align-items: center;
+        }
+
+        .card.curriculum .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card.curriculum .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .card.curriculum .content {
+            z-index: 1; 
+            margin-top: 10px;
+        }
+
+        .card.video-vercel {
+            background-color: #fff; 
+            color: black;
+            align-items: center;
+        }
+
+        .card.video-vercel .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        .card.video-vercel .image-container img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .card.video-vercel .content {
+            z-index: 1; 
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card superheroes">
-            <h2>SUPERHEROES</h2>
-            <a href="https://superheroes-jzc1.onrender.com">
-                <button>Leer más</button>
-            </a>
+            <div class="image-container">
+                <img src="https://i.pinimg.com/originals/2c/ae/9e/2cae9e50f7bb0e65b0a0b798dc4161d3.png" alt="SUPERHEROES">
+            </div>
+            <div class="content">
+                <h2>SUPERHEROES</h2>
+                <a href="https://github.com/tatiana906/SUPERHEROES.git">
+                    <button>Leer más</button>
+                </a>
+            </div>
         </div>
-
         <div class="card quien-soy">
-            <h2>QUIEN SOY</h2>
-            <a href="https://quien-soy-io24.onrender.com">
-                <button>Leer más</button>
-            </a>
+            <div class="image-container">
+                <img src="https://2.bp.blogspot.com/-mOP73k5NvsQ/Vy5ciGwwvLI/AAAAAAAADtw/wC8-ghqhv2QcD6zKychEtX6m_Oz3xq38gCLcB/s1600/QuienSoyYo.gif" alt="QUIEN SOY">
+            </div>
+            <div class="content">
+                <h2>QUIEN SOY</h2>
+                <a href="http://127.0.0.1:5501/PAGINA/PAGINA.HTML">
+                    <button>Leer más</button>
+                </a>
+            </div>
         </div>
-
         <div class="card curriculum">
-            <h2>CURRICULUM</h2>
-            <a href="https://curriculum-s9gz.onrender.com">
-                <button>Leer más</button>
-            </a>
+            <div class="image-container">
+                <img src="https://1.bp.blogspot.com/-7m5tGISwfFQ/YYGHWjrSReI/AAAAAAAAWTg/XZsP4Pr8UWoxcXsQ1uofCJSaI5heHR4sQCLcBGAsYHQ/s2048/curriculum%2Bvitae%2Bportada%2Bbonita.jpg" alt="CURRICULUM">
+            </div>
+            <div class="content">
+                <h2>CURRICULUM</h2>
+                <a href="http://127.0.0.1:5501/2025/CURRICULUM/CURRICULUM.HTML">
+                    <button>Leer más</button>
+                </a>
+            </div>
         </div>
-
-        <div class="card video-Render">
-            <h2>VIDEO RENDER</h2>
-            <a href="https://trabajo-fqn6.onrender.com/youtu.be/Xv3f-AGwr9I">
-                <button>Leer más</button>
-            </a>
+        <div class="card video-vercel">
+            <div class="image-container">
+                <img src="https://miro.medium.com/max/1200/1*EEEPht7Ch-B2BuLCT7AnDA.jpeg" alt="VIDEO VERCEL">
+            </div>
+            <div class="content">
+                <h2>VIDEO VERCEL</h2>
+                <a href="https://drive.google.com/file/d/1ubeZJyCwLISNQfDm5fx-_HyppGuviFtI/view?usp=sharing">
+                    <button>Leer más</button>
+                </a>
+            </div>
         </div>
     </div>
 </body>
